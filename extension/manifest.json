@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "LeoHelper",
+    "version": "0.1",
+    "description": "A LeoFinance.io helper",
+  
+    "background": {
+      "scripts": ["background.js"]
+    },
+  
+    "browser_action": {
+      "default_title": "Leo",
+      "default_popup": "popup.html"
+    },
+
+    "permissions": ["webRequest"]
+  }
