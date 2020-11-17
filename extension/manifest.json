@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "LeoHelper",
-    "version": "0.1",
+    "name": "Leo Helper",
+    "version": "0.0.0.1",
     "description": "A LeoFinance.io helper",
   
     "background": {
@@ -9,9 +9,25 @@
     },
   
     "browser_action": {
-      "default_title": "Leo",
+      "default_title": "Leo Helper",
       "default_popup": "popup.html"
     },
 
-    "permissions": ["webRequest"]
+    "permissions": [
+      "storage",
+      "webRequest",
+      "webRequestBlocking",
+      "*://hive.blog/",
+      "*://peakd.com/",
+      "*://leofinance.io/",
+      "*://ecency.com/",
+      "*://hivelist.io/",
+      "*://ctptalk.com/"
+    ],
+
+    "icons": {
+      "16": "assets/16x16.png",
+      "48": "assets/48x48.png",
+      "128": "assets/128x128.png"
+    }
   }
